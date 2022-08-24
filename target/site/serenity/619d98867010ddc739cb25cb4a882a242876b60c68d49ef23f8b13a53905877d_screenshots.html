@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="ecd981ef1fd9dd611c112c3fa54e906b4f5fa0c2bcc19e4adff2ea7de7305630.html">Create A Meeting</a></span>
+                > <span class="truncate-60"><a
+                    href="619d98867010ddc739cb25cb4a882a242876b60c68d49ef23f8b13a53905877d.html">create a new meeting in StartSharp </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-08-2022 19:50</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Create A Meeting </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user, I want to be able to create a meeting in StartSharp
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="1c93661d7adfe4061fe352595e2ce52f4ec073a4af7e078e9489c721221b3ba7.html">Scenery
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">create a new meeting in StartSharp
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given login page with my credentials<br><table class='embedded'><thead><th>user</th><th>password</th></thead><tbody><tr><td>&lt;user&gt;</td><td>&lt;password&gt;</td></tr></tbody></table><br>When create a new organization business unit on the page<br><table class='embedded'><tbody><tr><td>organization</td></tr><tr><td>choucair</td></tr></tbody></table><br>And Create a new meeting<br><table class='embedded'><thead><th>meeting</th><th>number</th></thead><tbody><tr><td>choucair testing</td><td>548646</td></tr></tbody></table><br>Then verify that the meeting was created with the name of choucair testing</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="751298964d54efe821e38c398502db5185a4645fe7bc134e2de78e4b6043083d.png" title=" Example #1: {user=admin, password=serenity}" width="1366"/>
+                <img src="751298964d54efe821e38c398502db5185a4645fe7bc134e2de78e4b6043083d.png" title=" Kevin open up" width="1366"/>
+                <img src="751298964d54efe821e38c398502db5185a4645fe7bc134e2de78e4b6043083d.png" title=" Kevin opens the Start sharp page" width="1366"/>
+                <img src="751298964d54efe821e38c398502db5185a4645fe7bc134e2de78e4b6043083d.png" title=" Kevin open up (completed)" width="1366"/>
+                <img src="f08beb52fb1ac3a65d67938c33c82fe5cd4267e3eed5dc6e2f59b01bcbc3dd4d.png" title=" Given login page with my credentials
+| user | password |
+| admin | serenity |" width="1366"/>
+                <img src="f08beb52fb1ac3a65d67938c33c82fe5cd4267e3eed5dc6e2f59b01bcbc3dd4d.png" title=" Kevin sing in" width="1366"/>
+                <img src="f08beb52fb1ac3a65d67938c33c82fe5cd4267e3eed5dc6e2f59b01bcbc3dd4d.png" title=" Kevin enters DELETE into write user" width="1366"/>
+                <img src="1d6084441e948de1e8780e0d37c5ece85f9d43cfe835dae1957f2974b6ccccce.png" title=" Kevin enters DELETE into write password" width="1366"/>
+                <img src="4ddec2d37d405a660e71b0fb78ac79b914a84109c3bdb3503201b79ca1b5a15d.png" title=" Kevin enters 'admin' into write user" width="1366"/>
+                <img src="c274dbc17a5c3b8382b185472922abe7e0b8a7d37e85670c4d85321f2afaa66d.png" title=" Kevin enters 'serenity' into write password" width="1366"/>
+                <img src="0a4dca28e3ead8de5a32ae5678ae17f54838f4ba62d923557011b0128709dddb.png" title=" Kevin clicks on click Sing In" width="1366"/>
+                <img src="0a4dca28e3ead8de5a32ae5678ae17f54838f4ba62d923557011b0128709dddb.png" title=" Kevin sing in (completed)" width="1366"/>
+                <img src="0a4dca28e3ead8de5a32ae5678ae17f54838f4ba62d923557011b0128709dddb.png" title=" Given login page with my credentials
+| user | password |
+| admin | serenity | (completed)" width="1366"/>
+                <img src="cb5a37ab8babaee6c6eeaaf80ddd3b82f47d489cfdb235973598a37ed2515f08.png" title=" When create a new organization business unit on the page
+| organization |
+| choucair |" width="1366"/>
+                <img src="cb5a37ab8babaee6c6eeaaf80ddd3b82f47d489cfdb235973598a37ed2515f08.png" title=" Kevin create new organization" width="1366"/>
+                <img src="cb5a37ab8babaee6c6eeaaf80ddd3b82f47d489cfdb235973598a37ed2515f08.png" title=" Kevin clicks on click organization" width="1366"/>
+                <img src="6237511de531d2c191cdabed273e02b0a62b934d9d81c6eb7113040c05f3bc30.png" title=" Kevin clicks on click business unit" width="1366"/>
+                <img src="1a3cc280849e844dfddb3a20c875ddb610a670b811a504e119ad75cee60010a1.png" title=" Kevin clicks on click new business unit" width="1366"/>
+                <img src="6de4ef632d8443e68bda90c80238f3b83ff5ca0d87b1381603bf5adc5eae8433.png" title=" Kevin enters 'choucair' into write business unit" width="1366"/>
+                <img src="b64e9b588a0ddfb815a7a48069129fb00444f8478c3f7df2ced4dfd2a92da305.png" title=" Kevin clicks on toggle parent business unit" width="1366"/>
+                <img src="6979842b5b735420a3e689785df872a18bf1d9a5f8e099b19e074e02253ff313.png" title=" Kevin clicks on select parent business unit" width="1366"/>
+                <img src="701b5841ff2ee398e382077b2e8e2c0c96ea7dceeb20d01bb2bece94aa96239c.png" title=" Kevin clicks on save business unit" width="1366"/>
+                <img src="701b5841ff2ee398e382077b2e8e2c0c96ea7dceeb20d01bb2bece94aa96239c.png" title=" Kevin create new organization (completed)" width="1366"/>
+                <img src="701b5841ff2ee398e382077b2e8e2c0c96ea7dceeb20d01bb2bece94aa96239c.png" title=" When create a new organization business unit on the page
+| organization |
+| choucair | (completed)" width="1366"/>
+                <img src="475946359e20afb4ec9201f483ca013866358d9dbb1297a4a9c50cd8fc81b3c6.png" title=" And Create a new meeting
+| meeting | number |
+| choucair testing | 548646 |" width="1366"/>
+                <img src="475946359e20afb4ec9201f483ca013866358d9dbb1297a4a9c50cd8fc81b3c6.png" title=" Kevin create meeting" width="1366"/>
+                <img src="475946359e20afb4ec9201f483ca013866358d9dbb1297a4a9c50cd8fc81b3c6.png" title=" Kevin clicks on click meeting" width="1366"/>
+                <img src="1268e3825d402debb18dbdc33649b73e2604bf9fe8747120066022d55e4294a7.png" title=" Kevin clicks on click meetings" width="1366"/>
+                <img src="f871703bd5ce66f8ac521d6d94a9321f7d44ec9d629ffef7b5bb1586c33f37b8.png" title=" Kevin clicks on click new meeting" width="1366"/>
+                <img src="393028a0b580b00183f3edd3f542d99ac6eb7e29da7db19c4dc62139f1d91f27.png" title=" Kevin enters 'choucair testing' into write name meeting" width="1366"/>
+                <img src="70032f98d79aa807b846977c66f46bda36615b75af5fea8478809cbf6b7d6dd8.png" title=" Kevin enters '548646' into write number meeting" width="1366"/>
+                <img src="16a63effaa2034116363cf1d2b3057c7633fdccaa6289932309a99305a69e5ed.png" title=" Kevin clicks on toggle type meeting" width="1366"/>
+                <img src="b2cd82b678b2817f0d8802c6342499bbd28d2a1785e4fa9c16bd187d3a58d306.png" title=" Kevin clicks on select type meeting" width="1366"/>
+                <img src="e6e64e3c91d7e59eb39e97656a97a031a1d4ed8ea1d5ad00878796d651209965.png" title=" Kevin clicks on click calendar button" width="1366"/>
+                <img src="6c914e5723c04c41d2ff9aedcf2a89731ea7705b1199633f261483b13c83e601.png" title=" Kevin clicks on Select start day the meeting" width="1366"/>
+                <img src="cf843e80de7222dccd24dc9d5d31bf9d14be2bafa8eea63e9327a34fdf3d0a94.png" title=" Kevin clicks on Select start hour the meeting" width="1366"/>
+                <img src="96a5c444679902579f93635200a1bb717239a7a4b99b4bab066a58447a18f997.png" title=" Kevin clicks on click calendar button" width="1366"/>
+                <img src="6ef1aa011c5dfca0a3793cfe3a0381c7a4275b6680585de11f5441fd589398e4.png" title=" Kevin clicks on Select end day the meeting" width="1366"/>
+                <img src="8f83e0c4cb566f4c72d915b543368bbddc0a25863f0a78378d8afdfb78a5f6b9.png" title=" Kevin clicks on select hour end meeting" width="1366"/>
+                <img src="55b08f5be5ba189859069f072580e114191cecd30d6d466834c990d9bbfd3702.png" title=" Kevin clicks on click toggle location" width="1366"/>
+                <img src="1db9387e5ab8a3bfa77619c739534abc815215642b7b2b00b5c7d02d40e8bac1.png" title=" Kevin clicks on Select toggle location" width="1366"/>
+                <img src="bc909a1276edd8bd933d329cdd31ce67195a97b427aa7ec0d6e71b3699d40a66.png" title=" Kevin clicks on click toggle unit" width="1366"/>
+                <img src="8bad60f4cddecc16637b94fd838793b79c3ff7ce693605e4a61a5bda7eea92ba.png" title=" Kevin clicks on Select unit" width="1366"/>
+                <img src="9f7191403c73fb242e7cdc6047640dc5b245b40ae670a7911eb187369e00f86c.png" title=" Kevin clicks on click toggle Organized by" width="1366"/>
+                <img src="6871cda6f04d4120a09cfca2a1c28f239216bfe8d2bf94d080ddd131bf0a1d8b.png" title=" Kevin clicks on Select Select Organized By" width="1366"/>
+                <img src="de5569860e244d1875a7ba1882472ab5f98dec3da30e685ebb29b4ed71cd780b.png" title=" Kevin clicks on click toggle reporter" width="1366"/>
+                <img src="f7c6b8e5870fb7650b6d6c9529f9ddf335715f5d02e078b3de1e3a45ef1044a4.png" title=" Kevin clicks on Select Select reporter" width="1366"/>
+                <img src="fa453dba7ba717611e71a58be9ae8621dd3c7b07752864db632c2e82b44cc14b.png" title=" Kevin clicks on click toggle Attendee List" width="1366"/>
+                <img src="9049d8d40d5109f8f5994ef6f2e655859017742d577efc9a9ce13e44e6d343c8.png" title=" Kevin clicks on Select Select Attender" width="1366"/>
+                <img src="8b5fe5817267ed2a4c3edec608e03c7c5b6bdb05cc3702bd282dcf7899e18ce2.png" title=" Kevin clicks on save meeting" width="1366"/>
+                <img src="23ae948f798ab8cc8f5c1a678f4ac58daecce7458e9f7865933c4fe6ed97fbf2.png" title=" Kevin create meeting (completed)" width="1366"/>
+                <img src="23ae948f798ab8cc8f5c1a678f4ac58daecce7458e9f7865933c4fe6ed97fbf2.png" title=" And Create a new meeting
+| meeting | number |
+| choucair testing | 548646 | (completed)" width="1366"/>
+                <img src="fe0cfeba0fd19e6b4c40cf34e71217c1ed3ded25f022d000a5af4ab6eb0560e2.png" title=" Then verify that the meeting was created with the name of choucair testing" width="1366"/>
+                <img src="fe0cfeba0fd19e6b4c40cf34e71217c1ed3ded25f022d000a5af4ab6eb0560e2.png" title=" Then review name the meeting" width="1366"/>
+                <img src="fe0cfeba0fd19e6b4c40cf34e71217c1ed3ded25f022d000a5af4ab6eb0560e2.png" title=" Kevin clicks on click toggle Meeting type " width="1366"/>
+                <img src="137751fd3d9573373a1ac91893c3af6f9168588cf7cfc32adecac2937f21d55a.png" title=" Kevin clicks on click toggle Meeting type " width="1366"/>
+                <img src="621c42e1092b9e7552dea1415a1ac628498c14ea6d5e298bbe7d02060bcf5838.png" title=" Kevin clicks on  search meeting " width="1366"/>
+                <img src="621c42e1092b9e7552dea1415a1ac628498c14ea6d5e298bbe7d02060bcf5838.png" title=" Then review name the meeting (completed)" width="1366"/>
+                <img src="621c42e1092b9e7552dea1415a1ac628498c14ea6d5e298bbe7d02060bcf5838.png" title=" Then verify that the meeting was created with the name of choucair testing (completed)" width="1366"/>
+                <img src="621c42e1092b9e7552dea1415a1ac628498c14ea6d5e298bbe7d02060bcf5838.png" title=" Example #1: {user=admin, password=serenity} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.52</span>
+</div>
+</body>
+</html>

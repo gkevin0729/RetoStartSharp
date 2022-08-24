@@ -15,13 +15,13 @@ public class NavigatePage extends PageObject {
             .located(By.xpath("//button[@class='btn btn-primary my-3 w-100']"));
 
     public static final Target organizationButton = Target.the("click organization")
-            .located(By.xpath("(//span[@class='s-sidebar-link-text'])[84]"));
+            .located(By.linkText("Organization"));
 
     public static final Target businessUnitButton = Target.the("click business unit")
-            .located(By.xpath("(//span[@class='s-sidebar-link-text'])[85]"));
+            .located(By.linkText("Business Units"));
 
     public static final Target newBusinessUnitButton = Target.the("click new business unit")
-            .located(By.xpath("(//span[@class='button-inner'])[1]"));
+            .located(By.xpath("//i[@class='fa fa-plus-circle text-green']"));
 
     public static final Target nameBusinessUnit = Target.the("write business unit")
             .located(By.name("Name"));
@@ -30,20 +30,20 @@ public class NavigatePage extends PageObject {
             .located(By.xpath("//span[@class='select2-chosen']"));
 
     public static final Target selectParentAdmin = Target.the("select parent business unit")
-            .located(By.xpath("(//li[@class='select2-results-dept-0 select2-result select2-result-selectable'])[3]"));
+            .located(By.xpath("(//div[@id='select2-result-label-93'])"));
 
     public static final Target saveBusinessUnit = Target.the("save business unit")
             .located(By.xpath("(//i[@class='fa fa-check-circle text-purple'])"));
 
 
     public static final Target meetingButton = Target.the("click meeting")
-            .located(By.xpath("(//span[@class='s-sidebar-link-text'])[87]"));
+            .located(By.linkText("Meeting"));
 
     public static final Target meetingsButton = Target.the("click meetings")
-            .located(By.xpath("(//span[@class='s-sidebar-link-text'])[88]"));
+            .located(By.linkText("Meetings"));
 
     public static final Target newMeetingButton = Target.the("click new meeting")
-            .located(By.xpath("(//span[@class='button-inner'])[1]"));
+            .located(By.xpath("//i[@class='fa fa-plus-circle text-green']"));
 
     public static final Target nameMeeting = Target.the("write name meeting")
             .located(By.name("MeetingName"));

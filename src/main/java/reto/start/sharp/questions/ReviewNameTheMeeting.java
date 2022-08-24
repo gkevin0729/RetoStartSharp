@@ -5,9 +5,8 @@ import static reto.start.sharp.userinterfaces.NavigatePage.*;
 
 import net.serenitybdd.screenplay.*;
 import net.serenitybdd.screenplay.actions.Click;
-import org.asciidoctor.extension.Reader;
 
-public class ReviewNameTheMeeting implements Question<Void> {
+public class ReviewNameTheMeeting implements Question<Boolean> {
     private String nameMeeting;
 
     public ReviewNameTheMeeting(String nameMeetingg) {
@@ -19,14 +18,15 @@ public class ReviewNameTheMeeting implements Question<Void> {
     }
 
     @Override
-    public Void answeredBy(Actor actor) {
+    public Boolean answeredBy(Actor actor) {
         actor.attemptsTo(Click.on(toggleMeetingType),
                 Click.on(selectMeetingType));
         actor.attemptsTo(Click.on(searchMeeting));
-            System.out.println("Meeting created successfully");
-
+        System.out.println("Meeting created successfully");
 
         return null;
+
+
     }
 
 }

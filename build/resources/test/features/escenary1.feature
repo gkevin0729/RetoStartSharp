@@ -8,17 +8,13 @@ Feature: Create a meeting
     Given login page with my credentials
       | user   | password   |
       | <user> | <password> |
-
     When create a new organization business unit on the page
       | organization |
-      | choucair    |
-
+      | choucair     |
     And Create a new meeting
-      | meeting | number |
-      | choucair testing   | 548646 |
-
+      | meeting          | number |
+      | choucair testing | 548646 |
     Then verify that the meeting was created with the name of choucair testing
-
 
     Examples:
       | user  | password |

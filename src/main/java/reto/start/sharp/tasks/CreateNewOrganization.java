@@ -9,8 +9,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import reto.start.sharp.models.InfoPerson;
 
 import java.util.List;
-
-import static reto.start.sharp.userinterfaces.NavigatePage.*;
+import static reto.start.sharp.userinterfaces.OrganizationPage.*;
 
 public class CreateNewOrganization implements Task {
     private List<InfoPerson> choucair;
@@ -30,11 +29,9 @@ public class CreateNewOrganization implements Task {
                 Click.on(businessUnitButton),
                 Click.on(newBusinessUnitButton));
         actor.attemptsTo(Enter.theValue(choucair.get(0).getOrganization()).into(nameBusinessUnit),
-                Click.on(selectParentUnit),
-                Click.on(selectParentAdmin),
+                Click.on(selectParentUnit));
+        actor.attemptsTo(Click.on(selectParentAdmin),
                 Click.on(saveBusinessUnit));
-
-
 
 
     }

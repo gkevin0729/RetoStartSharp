@@ -15,7 +15,6 @@ Feature: Create a meeting
       | meeting          | number |
       | choucair testing | 548646 |
     Then verify that the meeting was created with the name of choucair testing
-
     Examples:
       | user  | password |
       | admin | serenity |

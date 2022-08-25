@@ -11,7 +11,8 @@ import reto.start.sharp.models.InfoPerson;
 import java.util.List;
 
 import static java.lang.Thread.*;
-import static reto.start.sharp.userinterfaces.NavigatePage.*;
+import static reto.start.sharp.userinterfaces.MeetingPage.*;
+
 
 public class CreateMeeting implements Task {
     private List<InfoPerson> meeting;

@@ -2,75 +2,9 @@
 <testsuite name="reto.start.sharp.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="CHBOGH0LWD82" time="0.0">
   <properties/>
   <system-out><![CDATA[
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/escenary1.feature:21 ?[0m# create a new meeting in StartSharp
-
-1 Scenarios (?[31m1 failed?[0m)
-4 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m2 passed?[0m)
-0m23.782s
-
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=104.0.5112.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHBOGH0LWD82', ip: '192.168.100.237', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\SOPORT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8576f5951725f1290483c02185f0b18d
-*** Element info: {Using=xpath, value=(//span[@class='button-inner'])[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:217)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1142)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:950)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1225)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.CGLIB$performAs$0(<generated>)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d$$FastClassByCGLIB$$eb009f51.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.performAs(<generated>)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at reto.start.sharp.tasks.CreateMeeting.performAs(CreateMeeting.java:30)
-	at reto.start.sharp.tasks.CreateMeeting$$EnhancerByCGLIB$$9c2b9e9.CGLIB$performAs$0(<generated>)
-	at reto.start.sharp.tasks.CreateMeeting$$EnhancerByCGLIB$$9c2b9e9$$FastClassByCGLIB$$a9832c3c.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
-	at reto.start.sharp.tasks.CreateMeeting$$EnhancerByCGLIB$$9c2b9e9.performAs(<generated>)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:232)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:213)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:170)
-	at reto.start.sharp.stepsdefinitions.StepDefinitions.createANewMeeting(StepDefinitions.java:43)
-	at ?.Create a new meeting(src/test/resources/features/escenary1.feature:14)
+1 Scenarios (?[32m1 passed?[0m)
+4 Steps (?[32m4 passed?[0m)
+0m42.015s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 

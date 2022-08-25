@@ -21,8 +21,10 @@ public class OrganizationPage {
             .located(By.xpath("//span[@class='select2-chosen']"));
 
     public static final Target selectParentAdmin = Target.the("select parent business unit")
-            .located(By.xpath("(//li[@class='select2-results-dept-0 select2-result select2-result-selectable'])[3]"));
+            .located(By.xpath("//div[@id='select2-drop']//ul[@id='select2-results-1']/child::li[4]"));
 
     public static final Target saveBusinessUnit = Target.the("save business unit")
             .located(By.xpath("(//i[@class='fa fa-check-circle text-purple'])"));
+
+
 }

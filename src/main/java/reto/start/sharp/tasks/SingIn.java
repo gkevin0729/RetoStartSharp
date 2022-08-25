@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 import net.serenitybdd.screenplay.Task;
 import reto.start.sharp.models.InfoPerson;
 import java.util.List;
-import static reto.start.sharp.userinterfaces.NavigatePage.*;
+import static reto.start.sharp.userinterfaces.SingInPage.*;
 
 public class SingIn implements Task {
     private List<InfoPerson> info;

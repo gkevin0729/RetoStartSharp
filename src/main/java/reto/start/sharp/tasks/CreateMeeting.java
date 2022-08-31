@@ -52,12 +52,5 @@ public class CreateMeeting implements Task {
                 Click.on(toggleAttendeeList),
                 Click.on(selectAttendee),
                 Click.on(saveButton));
-        try {
-            sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-
     }
 }

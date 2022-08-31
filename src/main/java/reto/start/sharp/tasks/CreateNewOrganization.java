@@ -19,7 +19,7 @@ public class CreateNewOrganization implements Task {
     }
 
 
-    public static CreateNewOrganization businessUnit(List<InfoPerson> choucair) {
+    public static CreateNewOrganization businessUnit(List<InfoPerson>choucair) {
         return Tasks.instrumented(CreateNewOrganization.class, choucair);
     }
 

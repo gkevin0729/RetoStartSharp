@@ -4,12 +4,9 @@ public class InfoPerson {
 
     private String user;
     private String password;
-
     private String organization;
-
     private String meeting;
     private String number;
-
     public String getMeeting() {
         return meeting;
     }
@@ -32,11 +29,6 @@ public class InfoPerson {
 
     public void setOrganization(String organization) {
         this.organization = organization;
-    }
-
-
-    public InfoPerson() {
-
     }
 
     public String getUserName() {

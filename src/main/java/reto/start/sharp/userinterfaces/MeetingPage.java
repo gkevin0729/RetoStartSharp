@@ -52,32 +52,32 @@ public class MeetingPage {
 
 
     public static final Target unitToggle = Target.the("click toggle unit")
-            .located(By.xpath("//div[@id='s2id_Serenity_Pro_Meeting_MeetingDialog10_UnitId']"));
+            .located(By.id("s2id_Serenity_Pro_Meeting_MeetingDialog10_UnitId"));
 
     public static final Target selectUnit = Target.the("Select unit")
             .located(By.xpath("//div[@id='select2-drop']//ul[@id='select2-results-8']/child::li[2]"));
 
 
     public static final Target toggleOrganizedBy = Target.the("click toggle Organized by")
-            .located(By.xpath("//div[@id='s2id_Serenity_Pro_Meeting_MeetingDialog10_OrganizerContactId']"));
+            .located(By.id("s2id_Serenity_Pro_Meeting_MeetingDialog10_OrganizerContactId"));
     public static final Target selectOrganizedBy = Target.the("Select Select Organized By")
             .located(By.xpath("//div[@id='select2-drop']//ul[@id='select2-results-9']/child::li[7]"));
 
     public static final Target toggleReporter = Target.the("click toggle reporter")
-            .located(By.xpath("//div[@id='s2id_Serenity_Pro_Meeting_MeetingDialog10_ReporterContactId']"));
+            .located(By.id("s2id_Serenity_Pro_Meeting_MeetingDialog10_ReporterContactId"));
 
     public static final Target selectReporter = Target.the("Select Select reporter")
             .located(By.xpath("//div[@id='select2-drop']//ul[@id='select2-results-10']/child::li[5]"));
 
     public static final Target toggleAttendeeList = Target.the("click toggle Attendee List")
-            .located(By.xpath("//div[@id='s2id_autogen11']"));
+            .located(By.id("s2id_autogen11"));
 
     public static final Target selectAttendee = Target.the("Select Select Attender")
             .located(By.xpath("//div[@id='select2-drop']//ul[@id='select2-results-12']/child::li[2]"));
     public static final Target saveButton = Target.the("save meeting")
             .located(By.xpath("(//i[@class='fa fa-check-circle text-purple'])"));
     public static final Target toggleMeetingType = Target.the("click toggle Meeting type ")
-            .located(By.xpath("//div[@id='s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_MeetingTypeId']"));
+            .located(By.id("s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_MeetingTypeId"));
 
     public static final Target selectMeetingType = Target.the("click toggle Meeting type ")
             .located(By.xpath("//div[@id='select2-drop']//ul[@id='select2-results-1']/child::li[4]"));

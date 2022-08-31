@@ -23,4 +23,3 @@ Feature: Create a meeting
 
 
 
-

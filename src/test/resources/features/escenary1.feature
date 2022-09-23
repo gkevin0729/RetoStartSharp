@@ -10,11 +10,11 @@ Feature: Create a meeting
       | <user> | <password> |
     When create a new organization business unit on the page
       | organization |
-      | choucair     |
+      | codigos de automatizaion     |
     And Create a new meeting
       | meeting          | number |
-      | choucair testing | 548646 |
-    Then verify that the meeting was created with the name of choucair testing
+      | automatizacion | 548646 |
+    Then verify that the meeting was created with the name of automatizacion
     Examples:
       | user  | password |
       | admin | serenity |
